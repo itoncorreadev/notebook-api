@@ -1,19 +1,7 @@
 module V2
   class ContactsController < ApplicationController
 
-
-    #TOKEN = "root123"
-
-    #Authentication Token
-    include ActionController::HttpAuthentication::Token::ControllerMethods
-
-    #Authentication Digest
-    #include #ActionController::HttpAuthentication::Digest::ControllerMethods
-    #USERS = { "cleitonc" => Digest::MD5.hexdigest(["cleitonc", "Application", "root"].join(":"))}
-
-    #Authentication Basic
-    #include #ActionController::HttpAuthentication::Basic::ControllerMethods
-    #http_basic_authenticate_with name: "cleitonc", password: "root"
+    include ErrorSerializer
 
     before_action :authenticate
     before_action :set_contact, only: [:show, :update, :destroy]
@@ -37,7 +25,7 @@ module V2
       if @contact.save
         render json: @contact, include: [:kind, :phones, :address], status: :created, location: @contact
       else
-        render json: @contact.errors, status: :unprocessable_entity
+        render json: ErrorSerializer.serialize(@contact.errors)#@contact.errors, status: :unprocessable_entity
       end
     end
 

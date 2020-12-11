@@ -1,19 +1,7 @@
 module V1
   class ContactsController < ApplicationController
 
-
-    #TOKEN = "root123"
-
-    #Authentication Token
-    #include ActionController::HttpAuthentication::Token::ControllerMethods
-
-    #Authentication Digest
-    #include #ActionController::HttpAuthentication::Digest::ControllerMethods
-    #USERS = { "cleitonc" => Digest::MD5.hexdigest(["cleitonc", "Application", "root"].join(":"))}
-
-    #Authentication Basic
-    #include #ActionController::HttpAuthentication::Basic::ControllerMethods
-    #http_basic_authenticate_with name: "cleitonc", password: "root"
+    include ErrorSerializer
 
     before_action :authenticate_user!
     before_action :set_contact, only: [:show, :update, :destroy]
@@ -40,7 +28,7 @@ module V1
       if @contact.save
         render json: @contact, include: [:kind, :phones, :address], status: :created, location: @contact
       else
-        render json: @contact.errors, status: :unprocessable_entity
+        render json: ErrorSerializer.serialize(@contact.errors) #@contact.errors, status: :unprocessable_entity
       end
     end
 
@@ -66,24 +54,14 @@ module V1
 
       # Only allow a trusted parameter "white list" through.
       def contact_params
-        #params.require(:contact).permit(:name, :email, :birthdate, #:kind_id, phones_attributes: [:id, :number, :_destroy], #address_attributes: [:id, :street, :city])
         ActiveModelSerializers::Deserialization.jsonapi_parse(params, only: [:title, :content, :author])
       end
 
       def authenticate
-        #Authentication Digest
-        #authenticate_or_request_with_http_digest("Application") do |#username|
-        #  USERS[username]
-        #end
-
         #Authentication Token
         authenticate_or_request_with_http_token do |token, options|
           hmac_secret = 'my$ecretK3y'
           JWT.decode token, hmac_secret, true, { :algorithm => 'HS256'}
-          #ActiveSupport::SecurityUtils.secure_compare(
-          #  ::Digest::SHA256.hexdigest(token),
-          #  ::Digest::SHA256.hexdigest(TOKEN)
-          #)
         end
       end
   end
