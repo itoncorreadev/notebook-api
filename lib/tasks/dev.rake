@@ -15,7 +15,7 @@ namespace :dev do
       )
     end
     puts "Tipos de contatos cadastrados com sucesso!"
-    #################################################
+    ##################################################
     puts "Cadastrando os contatos..."
     100.times do |i|
       Contact.create!(
@@ -27,6 +27,7 @@ namespace :dev do
     end
     puts "Contatos cadastrados com sucesso!"
     ##################################################
+    ##################################################
     puts "Cadastrando os telefones..."
     Contact.all.each do |contact|
       Random.rand(5).times do |i|
@@ -36,6 +37,7 @@ namespace :dev do
       end
     end
     puts "Telefones cadastrados com sucesso!"
+    ##################################################
     ##################################################
     puts "Cadastrando os endereços..."
     Contact.all.each do |contact|
