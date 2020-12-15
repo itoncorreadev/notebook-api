@@ -3,7 +3,7 @@ module V1
 
     include ErrorSerializer
 
-    before_action :authenticate_user!
+    #before_action :authenticate_user!
     before_action :set_contact, only: [:show, :update, :destroy]
 
     # GET /contacts
@@ -11,9 +11,12 @@ module V1
       page_number = params[:page].try(:[], :number)
       page_page   = params[:page].try(:[], :size)
 
+      # Cache-Control --- expires_in 30.seconds, public:true
       @contacts = Contact.all.page(params[:page].try(:[], :number))
 
-      render json: @contacts
+      if stale?(etag: @contacts)
+        render json: @contacts
+      end
     end
 
     # GET /contacts/1
