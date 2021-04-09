@@ -6,13 +6,13 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 Consulte **Implantação** para saber como implantar o projeto.
 
-### 📋 Pré-requisitos
+## 📋 Pré-requisitos
 
 ```
 Docker Desktop
 ```
 
-### 🔧 Instalação do Docker
+## 🔧 Instalação do Docker
 Siga os passos nos links abaixo para instalação do Docker de acordo com seu sistema operacional:
 
 * [Como instalar o Docker](https://docs.docker.com/engine/installation/)
