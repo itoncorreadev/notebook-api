@@ -1,24 +1,45 @@
-# README
+# NOTEBOOK API
+Projeto agenda em Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 🚀 Começando
+Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
-Things you may want to cover:
+Consulte **Implantação** para saber como implantar o projeto.
 
-* Ruby version
+### 📋 Pré-requisitos
 
-* System dependencies
+```
+Docker Desktop
+```
 
-* Configuration
+### 🔧 Instalação do Docker
+Siga os passos nos links abaixo para instalação do Docker de acordo com seu sistema operacional:
 
-* Database creation
+* [Como instalar o Docker](https://docs.docker.com/engine/installation/)
+* [Como instalar o Docker Compose](https://docs.docker.com/compose/)
 
-* Database initialization
+## ⚙️ Build do Projeto
+Para fazer o Build de todos os nossos containers basta rodar (dentro do projeto):
 
-* How to run the test suite
+```
+docker-compose build
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Agora precisamos criar nosso banco de dados e rodar as migrações e seeds, utilizando o docker-compose para fazer isso de maneira fácil. No console rode:
 
-* Deployment instructions
+```
+docker-compose run application rake db:create db:migrate db:seed
+```
 
-* ...
+Para subir nossos containers, rode no console:
+
+```
+docker-compose up
+```
+
+Para rodar em background utilize o _-d_ após i _up_:
+
+```
+docker-compose up -d
+```
+
