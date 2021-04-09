@@ -1,3 +1,5 @@
+![Notebook API](https://findicons.com/files/icons/820/simply_google/256/google_notebook.png)
+
 # 📚 Notebook API
 Projeto agenda em Ruby on Rails
 
