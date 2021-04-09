@@ -1,4 +1,4 @@
-# NOTEBOOK API
+# 📖 NOTEBOOK API
 Projeto agenda em Ruby on Rails
 
 ## 🚀 Começando
