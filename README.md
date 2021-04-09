@@ -53,7 +53,7 @@ rspec
 
 ## 🛠️ Construído com
 
-* [Ruby on Rails](https://rubyonrails.org)
+* [Rails](https://github.com/rails/rails/)
 * [Gem Devise Token Auth](https://github.com/heartcombo/devise)
 * [Gem Versionist](https://github.com/bploetz/versionist)
 * [Gem Kaminari](https://github.com/kaminari/kaminari)
