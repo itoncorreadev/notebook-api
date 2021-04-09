@@ -50,3 +50,14 @@ No diretório do projeto rode o comando:
 ```
 rspec
 ```
+
+## 🛠️ Construído com
+
+* [Ruby on Rails](https://rubyonrails.org)
+* [Gem Devise Token Auth](https://github.com/heartcombo/devise)
+* [Gem Versionist](https://github.com/bploetz/versionist)
+* [Gem Kaminari](https://github.com/kaminari/kaminari)
+* [Gem Faker](https://github.com/faker-ruby/faker)
+* [Gem Rspec Rails](https://github.com/rspec/rspec-rails)
+* [Gem Shouda Matchers](https://github.com/thoughtbot/shoulda-matchers)
+* [Gem Factory Bot](https://github.com/thoughtbot/factory_bot)
