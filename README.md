@@ -61,3 +61,7 @@ rspec
 * [Gem Rspec Rails](https://github.com/rspec/rspec-rails)
 * [Gem Shouda Matchers](https://github.com/thoughtbot/shoulda-matchers)
 * [Gem Factory Bot](https://github.com/thoughtbot/factory_bot)
+
+## ✒️ Autores
+
+* **Cleiton Corrêa** - *Trabalho Inicial* - [Developer](https://github.com/cleitoncorreas)
