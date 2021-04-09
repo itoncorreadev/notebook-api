@@ -65,3 +65,16 @@ rspec
 ## ✒️ Autores
 
 * **Cleiton Corrêa** - *Trabalho Inicial* - [Developer](https://github.com/cleitoncorreas)
+
+## 📄 Licença
+
+Este projeto está sob a licença OpenSource - veja o arquivo [LICENSE.md](https://github.com/cleitoncorreas/notebook_api/LICENSE.md) para detalhes.
+
+## 🎁 Gratidão
+
+* Projeto utilizado para fins de estudo 📢.
+* Obrigado a todos que ajudaram no projeto 🤓.
+
+
+---
+⌨️ com ❤️ por [Cleiton Corrêa](https://github.com/cleitoncorreas) 😊
