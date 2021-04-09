@@ -43,3 +43,10 @@ Para rodar em background utilize o _-d_ após i _up_:
 docker-compose up -d
 ```
 
+## ⚙️ Executando os testes
+
+No diretório do projeto rode o comando:
+
+```
+rspec
+```
