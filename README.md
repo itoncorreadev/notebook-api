@@ -1,7 +1,7 @@
 ![Notebook API](https://findicons.com/files/icons/820/simply_google/256/google_notebook.png)
 
-# 📚 Notebook API
-Projeto agenda em Ruby on Rails
+# 📚 Notebook (Backend)
+Projeto agenda backend Ruby on Rails API
 
 ## 🚀 Começando
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
