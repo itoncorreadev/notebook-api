@@ -50,7 +50,7 @@ docker-compose up -d
 No diretório do projeto rode o comando:
 
 ```
-rspec
+docker-compose run application bundle exec spring rspec
 ```
 
 ## 🛠️ Construído com
