@@ -1,4 +1,8 @@
-![Notebook API](https://findicons.com/files/icons/820/simply_google/256/google_notebook.png)
+<p align="center">
+  <img src="https://findicons.com/files/icons/820/simply_google/256/google_notebook.png" />
+</p>
+<h1 align="center">Notebook API</h1>
+<br>
 
 # 📚 Notebook (Backend)
 Projeto agenda backend Ruby on Rails API
