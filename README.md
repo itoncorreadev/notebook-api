@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://findicons.com/files/icons/820/simply_google/256/google_notebook.png" width="200" height="200" />
 </p>
-<h1 align="center">Notebook API</h1>
+<h1 align="center">Notebook</h1>
 <br>
 
 # 📚 Notebook (Backend)
