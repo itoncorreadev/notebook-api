@@ -24,6 +24,19 @@ Siga os passos nos links abaixo para instalação do Docker de acordo com seu si
 * [Como instalar o Docker](https://docs.docker.com/engine/installation/)
 * [Como instalar o Docker Compose](https://docs.docker.com/compose/)
 
+## ⬇️ Clonar o projeto
+Para obter uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste execute o comando abaixo:
+
+```
+git clone https://github.com/cleitoncorreas/notebook-api.git
+```
+
+logo após o download, entre na pasta do projeto
+
+```
+cd notebook-api
+```
+
 ## ⚙️ Build do Projeto
 Para fazer o Build de todos os nossos containers basta rodar (dentro do projeto):
 
