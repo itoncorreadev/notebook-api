@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://github.com/cleitoncorreas/cleitoncorreas/blob/05f3e3270cecc653a1d29952e8e9555533e742de/Projetos/Notebook/Logo/logo.png" width="200" height="200" />
 </p>
-<h1 align="center">Notebook</h1>
+
 <br>
 
 # 📚 Notebook (Backend)
