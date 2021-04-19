@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://findicons.com/files/icons/820/simply_google/256/google_notebook.png" width="200" height="200" />
+  <img src="https://github.com/cleitoncorreas/cleitoncorreas/blob/05f3e3270cecc653a1d29952e8e9555533e742de/Projetos/Notebook/Logo/logo.png" width="200" height="200" />
 </p>
 <h1 align="center">Notebook</h1>
 <br>
